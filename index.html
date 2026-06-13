@@ -151,10 +151,10 @@ table.items-table input:focus { outline: 1px solid #1a237e; }
         <table class="items-table">
           <thead>
             <tr>
-              <th style="width:18%">Model</th>
+              <th style="width:28%">Model</th>
               <th style="width:12%">Qty</th>
-              <th style="width:35%">Unit Price</th>
-              <th style="width:35%">Total Amount (PKR)</th>
+              <th style="width:30%">Unit Price</th>
+              <th style="width:30%">Total Amount (PKR)</th>
             </tr>
           </thead>
           <tbody id="items-body">
@@ -432,7 +432,7 @@ function loadRecipients() {
   });
 }
 
-let sigPos = { x: 520, y: 710 };
+let sigPos = { x: 60, y: 880 };
 let dragData = null;
 function makeDragable(el) {
   el.onmousedown = function(e) {
@@ -544,10 +544,10 @@ function generatePreview() {
       '<div style="font-size:11px;margin-bottom:10px;line-height:1.4;">' + data.intro + '</div>' +
       '<table style="width:100%;border-collapse:collapse;margin-bottom:10px;">' +
         '<thead><tr>' +
-          '<th style="background:#1a237e;color:#fff;padding:5px 6px;border:1px solid #000;font-size:10px;text-align:center;width:22%;">Model</th>' +
+          '<th style="background:#1a237e;color:#fff;padding:5px 6px;border:1px solid #000;font-size:10px;text-align:center;width:30%;">Model</th>' +
           '<th style="background:#1a237e;color:#fff;padding:5px 6px;border:1px solid #000;font-size:10px;text-align:center;width:12%;">Quantity</th>' +
-          '<th style="background:#1a237e;color:#fff;padding:5px 6px;border:1px solid #000;font-size:10px;text-align:center;width:33%;">Unit Price (Excluding all taxes)</th>' +
-          '<th style="background:#1a237e;color:#fff;padding:5px 6px;border:1px solid #000;font-size:10px;text-align:center;width:33%;">Total Amount in PKR</th>' +
+          '<th style="background:#1a237e;color:#fff;padding:5px 6px;border:1px solid #000;font-size:10px;text-align:center;width:29%;">Unit Price (Excluding all taxes)</th>' +
+          '<th style="background:#1a237e;color:#fff;padding:5px 6px;border:1px solid #000;font-size:10px;text-align:center;width:29%;">Total Amount in PKR</th>' +
         '</tr></thead>' +
         '<tbody>' + itemsHtml +
         '<tr style="font-weight:bold;"><td colspan="3" style="text-align:right;padding:4px 6px;border:1px solid #000;font-size:12px;">Grand Total</td>' +
